@@ -10,59 +10,62 @@ const CaseStudiesPage = () => {
     {
       client: 'TechCorp Solutions',
       industry: 'Professional Services',
-      challenge: 'Growing from 80 to 150 employees in 6 months created IT chaos. Their existing infrastructure couldn\'t scale, remote access was unreliable, and security was becoming a major concern.',
-      solution: 'We implemented a complete Active Directory overhaul with automated provisioning, deployed Exchange Online with advanced threat protection, and built a secure VPN infrastructure for remote teams.',
+      challenge: 'A fast-growing team meant constant onboarding, device issues, and “who has access to what?” chaos. IT was becoming a blocker: new starters weren’t ready, security was inconsistent, and the business needed a setup that could scale without hiring internal IT.',
+      solution: 'We took over day-to-day support, tightened security with MFA and proper access control, standardised device setup, and organised their Microsoft 365 environment so email, Teams and file sharing worked properly. We also introduced reliable backups and a clean joiner/leaver process.',
       results: [
-        { metric: '99.9%', label: 'System Uptime', icon: TrendingUp },
-        { metric: '3 hours', label: 'Avg. Response Time', icon: Clock },
-        { metric: '$120K', label: 'Annual Savings', icon: DollarSign },
-        { metric: 'Zero', label: 'Security Breaches', icon: Shield }
+        { metric: 'Faster', label: 'Onboarding', icon: TrendingUp },
+        { metric: 'Same-day', label: 'Device Setup', icon: Clock },
+        { metric: 'Reduced', label: 'IT Disruption', icon: DollarSign },
+        { metric: 'Stronger', label: 'Security Posture', icon: Shield }
       ],
-      testimonial: 'FixitAbz didn\'t just fix our IT—they transformed how we work. Our team is more productive, and I actually sleep at night knowing our systems are secure.',
-      author: 'Sarah Chen, CTO'
+      testimonial: 'FixitAbz didn’t just fix issues — they brought structure. New starters are ready, access is controlled, and IT isn’t a daily headache anymore.',
+      author: 'Sarah Chen, Operations Lead'
     },
     {
       client: 'BuildRight Construction',
-      industry: 'Construction & Manufacturing',
-      challenge: 'Field teams couldn\'t access critical project files, leading to costly delays. Their on-premise servers were aging, and backups were inconsistent at best.',
-      solution: 'We migrated them to a hybrid cloud infrastructure with secure mobile access, implemented automated backups with disaster recovery, and integrated their field management software with centralized file storage.',
+      industry: 'Construction & Field Teams',
+      challenge: 'Remote and field staff struggled with slow access to files, unreliable VPN connections, and inconsistent laptop setups. The business needed secure access to data and support for staff who weren’t sitting in an office all day.',
+      solution: 'We cleaned up their Microsoft 365 setup for file access and collaboration, implemented secure remote access, and standardised laptops so devices were managed and supported properly. Backups were put in place so data was recoverable if anything went wrong.',
       results: [
-        { metric: '85%', label: 'Faster File Access', icon: TrendingUp },
-        { metric: '15 min', label: 'Disaster Recovery', icon: Clock },
-        { metric: '$200K', label: 'Prevented Losses', icon: DollarSign },
-        { metric: '100%', label: 'Backup Success', icon: Shield }
+        { metric: 'Faster', label: 'File Access', icon: TrendingUp },
+        { metric: 'Less', label: 'Downtime', icon: Clock },
+        { metric: 'Lower', label: 'Support Burden', icon: DollarSign },
+        { metric: 'Secure', label: 'Remote Working', icon: Shield }
       ],
-      testimonial: 'We used to lose hours every week to IT issues. Now our teams in the field have everything they need, instantly. It\'s been a game-changer for project timelines.',
+      testimonial: 'Our teams can access what they need without messing around. Support is quick, and we’re no longer firefighting IT problems every week.',
       author: 'Michael Rodriguez, Operations Director'
     },
     {
-      client: 'HealthFirst Medical Group',
-      industry: 'Healthcare',
-      challenge: 'HIPAA compliance gaps were putting patient data at risk. Their email system lacked encryption, file sharing was insecure, and they had no audit trail for data access.',
-      solution: 'We built a HIPAA-compliant infrastructure from the ground up, including encrypted file sharing, secure email with DLP, comprehensive access logging, and regular security audits.',
+      client: 'HealthFirst Clinic Group',
+      industry: 'Healthcare & Clinics',
+      challenge: 'Patient-facing teams need systems to be reliable and secure. They had inconsistent access controls, unclear device standards, and no confidence in backups. They also needed a more professional approach to security and data handling.',
+      solution: 'We introduced a security-first setup: MFA, better account control, secure devices, and clearer access rules. Microsoft 365 was organised properly for email and file sharing, and backups were put in place with regular checks. We also implemented a joiner/leaver process so access stays tight as staff change.',
       results: [
-        { metric: '100%', label: 'HIPAA Compliant', icon: TrendingUp },
-        { metric: '24/7', label: 'Security Monitoring', icon: Clock },
-        { metric: '$0', label: 'Compliance Fines', icon: DollarSign },
-        { metric: 'SOC 2', label: 'Certified', icon: Shield }
+        { metric: 'Clear', label: 'Access Control', icon: TrendingUp },
+        { metric: 'Reliable', label: 'Day-to-day IT', icon: Clock },
+        { metric: 'Protected', label: 'Business Data', icon: DollarSign },
+        { metric: 'Improved', label: 'Security', icon: Shield }
       ],
-      testimonial: 'Patient trust is everything in healthcare. FixitAbz gave us the security infrastructure we needed to protect that trust. The audit process was painless for the first time ever.',
-      author: 'Dr. Jennifer Park, CEO'
+      testimonial: 'We needed IT that was reliable and secure without becoming complicated. FixitAbz made everything simpler and more controlled.',
+      author: 'Dr. Jennifer Park, Practice Owner'
     }
   ];
 
   return (
     <>
       <Helmet>
-        <title>Case Studies - Real Results from Real Clients | FixitAbz</title>
-        <meta name="description" content="See how FixitAbz helped businesses achieve 99.9% uptime, reduce IT costs, and improve security. Real case studies with measurable results from Professional Services, Construction, and Healthcare industries." />
+        <title>Case Studies - Real Outcomes for Growing Teams | FixitAbz</title>
+        <meta
+          name="description"
+          content="Explore real-world examples of managed IT improvements: smoother onboarding, stronger security, better Microsoft 365, reliable backups and fewer IT headaches for growing businesses."
+        />
       </Helmet>
 
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-black pointer-events-none" />
-          
+
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -70,17 +73,17 @@ const CaseStudiesPage = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-600/20 to-blue-600/20 border border-purple-500/30 rounded-full text-sm text-purple-300 font-medium mb-6">
-                Real Results
+                Real Outcomes
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
                   Success Stories
                 </span>
               </h1>
-              
+
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Don't just take our word for it. See how we've helped businesses like yours solve real IT challenges.
+                Real examples of what “proper IT” looks like: smoother onboarding, tighter security, cleaner Microsoft 365, reliable backups, and less downtime.
               </p>
             </motion.div>
           </div>
@@ -166,17 +169,17 @@ const CaseStudiesPage = () => {
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  Our Track Record
+                  What We Focus On
                 </span>
               </h2>
             </motion.div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { value: '150+', label: 'Happy Clients' },
-                { value: '99.9%', label: 'Avg. Uptime' },
-                { value: '< 2hr', label: 'Response Time' },
-                { value: '$5M+', label: 'Cost Savings' }
+                { value: 'Fast', label: 'Support & Response' },
+                { value: 'Secure', label: 'MFA + Device Protection' },
+                { value: 'Reliable', label: 'Backups + Recovery' },
+                { value: 'Scalable', label: 'Onboarding Built-In' }
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -202,7 +205,7 @@ const CaseStudiesPage = () => {
             <div className="absolute top-0 left-0 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl" />
           </div>
-          
+
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -215,7 +218,7 @@ const CaseStudiesPage = () => {
                 </span>
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Let's talk about what results we can deliver for your business
+                Let’s talk about how we can make your IT simpler, more secure, and easier to scale.
               </p>
               <Link to="/request-quote">
                 <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-12 py-6 text-lg group">

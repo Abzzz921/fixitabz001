@@ -9,71 +9,102 @@ const ServicesPage = () => {
   const services = [
     {
       icon: Shield,
-      title: 'Active Directory',
-      tagline: 'Identity Management That Just Works',
-      description: 'Stop juggling passwords and permissions. Our Active Directory solutions give you centralized control over user access, security policies, and authentication across your entire infrastructure.',
+      title: 'Managed IT Support',
+      tagline: 'Your IT, Handled Properly',
+      description: 'We provide day-to-day IT support for your entire team. From fixing issues to keeping everything running smoothly, we become your outsourced IT department.',
       features: [
-        'Single sign-on (SSO) implementation',
-        'Multi-factor authentication (MFA)',
-        'Group policy management',
-        'User lifecycle automation',
-        'Role-based access control',
-        'Security compliance auditing'
+        'Unlimited remote & onsite support',
+        'Helpdesk for your whole team',
+        'Hardware & software troubleshooting',
+        'System monitoring & maintenance',
+        'Wi-Fi & network support',
+        'Plain-English, friendly support'
       ],
-      benefits: 'Reduce security risks by 90% and cut IT management time in half with automated user provisioning and centralized access control.'
+      benefits: 'Your team stays productive while we quietly keep everything working in the background.'
+    },
+    {
+      icon: Shield,
+      title: 'Cybersecurity',
+      tagline: 'Simple, Effective Protection',
+      description: 'We protect your users, devices and data from modern cyber threats without slowing anyone down.',
+      features: [
+        'Multi-factor authentication (MFA)',
+        'Endpoint protection',
+        'Email security',
+        'Account & access control',
+        'Threat monitoring',
+        'Security best practices'
+      ],
+      benefits: 'Your business stays safe from breaches, ransomware and data loss.'
     },
     {
       icon: Mail,
-      title: 'Exchange Email',
-      tagline: 'Email That Scales With Your Business',
-      description: 'Enterprise-grade email that doesn\'t break the bank. We handle migration, management, and security so your team can communicate without interruption.',
+      title: 'Microsoft 365 & Email',
+      tagline: 'Your Team’s Digital Workspace',
+      description: 'We manage your email, calendars, file storage and collaboration tools so your team can work easily and securely from anywhere.',
       features: [
-        'Exchange Online migration',
-        'Advanced threat protection',
-        'Mailbox management & archiving',
-        'Mobile device management',
-        'Spam & malware filtering',
-        '99.9% uptime guarantee'
+        'Microsoft 365 & Google Workspace',
+        'Email setup & management',
+        'Teams, SharePoint & OneDrive',
+        'Google Drive & shared files',
+        'User setup & permissions',
+        'Spam & malware protection'
       ],
-      benefits: 'Eliminate email downtime and security threats with military-grade protection and 24/7 monitoring.'
+      benefits: 'No lost emails, no access issues — just smooth communication and collaboration.'
     },
     {
       icon: Database,
-      title: 'File Server Management',
-      tagline: 'Your Files, Always Accessible, Always Secure',
-      description: 'Give your team seamless access to files from anywhere while maintaining ironclad security. Our file server solutions grow with your data needs.',
+      title: 'Device & Laptop Management',
+      tagline: 'Every Device Secured & Ready',
+      description: 'We manage all company laptops and devices, keeping them secure, up-to-date and ready for your team to work from anywhere.',
       features: [
-        'Secure file sharing & collaboration',
-        'Automated backup & disaster recovery',
-        'Permissions & access control',
-        'Version control & audit trails',
-        'Cloud & on-premise integration',
-        'Ransomware protection'
+        'Windows & Mac management',
+        'Intune, Jamf & device policies',
+        'Software deployment',
+        'Security & encryption',
+        'Remote lock & wipe',
+        'Hardware lifecycle management'
       ],
-      benefits: 'Never lose a file again with automated backups and recover from disasters in minutes, not days.'
+      benefits: 'Every device is protected, controlled and ready to work — wherever your team is.'
     },
     {
       icon: Network,
-      title: 'Network Solutions',
-      tagline: 'Infrastructure That Never Slows You Down',
-      description: 'Build a network that can handle whatever your business throws at it. Fast, reliable, and secure connectivity for all your locations and remote workers.',
+      title: 'New Starters & Leavers',
+      tagline: 'Onboarded Right. Offboarded Securely.',
+      description: 'We handle all IT when people join or leave your business, keeping everything organised and secure.',
       features: [
-        'Network design & architecture',
-        'VPN & remote access setup',
-        'Load balancing & optimization',
-        'Firewall & security configuration',
-        'Network monitoring & maintenance',
-        'Bandwidth management'
+        'New starter laptop setup',
+        'Email & account creation',
+        'Permissions & access control',
+        'Leaver lock-down',
+        'Data protection',
+        'No loose ends'
       ],
-      benefits: 'Experience 99.9% uptime and lightning-fast connections that keep your team productive, no matter where they work.'
+      benefits: 'New hires are productive on day one — and leavers never take access with them.'
+    },
+    {
+      icon: Database,
+      title: 'Backup & Recovery',
+      tagline: 'Your Data, Always Protected',
+      description: 'We make sure your business data is backed up and recoverable if something goes wrong.',
+      features: [
+        'Device backups',
+        'Microsoft 365 backups',
+        'Cloud data protection',
+        'Ransomware recovery',
+        'Regular backup checks',
+        'Fast data restore'
+      ],
+      benefits: 'If the worst happens, your data is safe and your business can keep going.'
     }
   ];
+
 
   return (
     <>
       <Helmet>
-        <title>IT Services - Active Directory, Exchange, Networking | FixitAbz</title>
-        <meta name="description" content="Comprehensive IT services including Active Directory management, Exchange Email solutions, File Server Management, and Network Solutions for enterprises with 100+ employees." />
+        <title>IT Services - Managed IT, Cloud & Security | FixItAbz</title>
+        <meta name="description" content="Managed IT support, Microsoft 365, device management and cybersecurity for growing UK businesses." />
       </Helmet>
 
       <div className="pt-20">
@@ -98,7 +129,7 @@ const ServicesPage = () => {
               </h1>
               
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                Every service you need to run a modern, scalable IT infrastructure. No fluff, just results.
+                Everything your business needs to run IT properly — without hiring an internal IT team.
               </p>
             </motion.div>
           </div>
@@ -176,11 +207,11 @@ const ServicesPage = () => {
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
-                  Let's Build Your Solution
+                  Let’s Build Your IT Setup
                 </span>
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Every business is different. Let's talk about what you actually need.
+                Simple, secure IT that grows with your business.
               </p>
               <Link to="/request-quote">
                 <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-12 py-6 text-lg group">

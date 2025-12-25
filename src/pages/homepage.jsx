@@ -8,24 +8,34 @@ import { Button } from '@/components/ui/button';
 const HomePage = () => {
   const services = [
     {
-      title: 'Active Directory',
-      description: 'Centralized user management and security for your entire organization',
+      title: 'Managed IT Support',
+      description: 'Day-to-day IT support for your whole team — without hiring internal IT',
       icon: Shield
     },
     {
-      title: 'Exchange Email',
-      description: 'Enterprise email solutions that scale with your business',
+      title: 'Cybersecurity',
+      description: 'MFA, endpoint protection and monitoring to keep your business protected',
       icon: Zap
     },
     {
-      title: 'File Server Management',
-      description: 'Secure, reliable file storage and access control',
+      title: 'Microsoft 365 & Email',
+      description: 'Email, Teams and cloud tools managed properly — secure and reliable',
       icon: Users
     },
     {
-      title: 'Network Solutions',
-      description: 'Rock-solid infrastructure that keeps you connected',
+      title: 'Device & Laptop Management',
+      description: 'Secure, managed Windows & Mac devices that just work for your staff',
       icon: CheckCircle
+    },
+    {
+      title: 'New Starters & Leavers',
+      description: 'Onboarding and offboarding handled properly — no loose ends or risks',
+      icon: Shield
+    },
+    {
+      title: 'Backup & Recovery',
+      description: 'Device and Microsoft 365 backups so you can recover fast if anything happens',
+      icon: Zap
     }
   ];
 
@@ -57,8 +67,8 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>FixitAbz - Enterprise IT Solutions for Growing Businesses</title>
-        <meta name="description" content="Transform your IT infrastructure with FixitAbz. We provide Active Directory, Exchange Email, File Server Management, and Network Solutions for SMBs with 100+ employees." />
+        <title>FixitAbz - Managed IT for Growing Businesses</title>
+        <meta name="description" content="Managed IT support, cybersecurity, Microsoft 365, device management, backups and onboarding for growing UK businesses." />
       </Helmet>
 
       <div className="pt-20">
@@ -84,7 +94,7 @@ const HomePage = () => {
                 transition={{ delay: 0.2 }}
                 className="inline-block px-4 py-2 bg-gradient-to-r from-purple-600/20 to-blue-600/20 border border-purple-500/30 rounded-full text-sm text-purple-300 font-medium"
               >
-                Enterprise-Grade IT • Built for Growth
+                Managed IT • Cybersecurity • Cloud
               </motion.div>
 
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
@@ -98,7 +108,7 @@ const HomePage = () => {
               </h1>
 
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Stop wrestling with IT. We manage your infrastructure so you can focus on scaling your business. Real solutions. Real results.
+                Stop wrestling with IT. We manage your IT support, security, devices and cloud tools so your team can focus on growing the business.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -118,15 +128,15 @@ const HomePage = () => {
               <div className="pt-8 flex flex-wrap justify-center gap-8 text-sm text-gray-400">
                 <div className="flex items-center gap-2">
                   <CheckCircle size={20} className="text-green-400" />
-                  <span>99.9% Uptime SLA</span>
+                  <span>Proactive Support</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={20} className="text-green-400" />
-                  <span>24/7 Support</span>
+                  <span>Security-First Setup</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={20} className="text-green-400" />
-                  <span>SOC 2 Compliant</span>
+                  <span>Plain-English IT</span>
                 </div>
               </div>
             </motion.div>
@@ -161,7 +171,9 @@ const HomePage = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ y: -5, scale: 1.02 }}
-                  className="relative group"
+                  className={`relative group ${
+                    services.length === 6 && index === 4 ? 'lg:col-start-2' : ''
+                  } ${services.length === 6 && index === 5 ? 'lg:col-start-3' : ''}`}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
                   <div className="relative bg-black/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 h-full hover:border-purple-500/50 transition-all">
