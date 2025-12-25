@@ -39,7 +39,7 @@ const ServicesPage = () => {
     },
     {
       icon: Mail,
-      title: 'Microsoft 365 & Email',
+      title: 'Microsoft 365 & Google Workspace',
       tagline: 'Your Team’s Digital Workspace',
       description: 'We manage your email, calendars, file storage and collaboration tools so your team can work easily and securely from anywhere.',
       features: [

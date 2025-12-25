@@ -18,7 +18,7 @@ const HomePage = () => {
       icon: Zap
     },
     {
-      title: 'Microsoft 365 & Email',
+      title: 'Microsoft 365 & Google Workspace',
       description: 'Email, Teams and cloud tools managed properly — secure and reliable',
       icon: Users
     },
